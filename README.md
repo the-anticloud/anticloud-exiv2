@@ -1,28 +1,20 @@
 # EXIV2
 
-> Exiv2 is a native c++ extension for [io.js](https://iojs.org/en/index.html) and [node.js](https://nodejs.org/) that provides support for reading and writing image metadata via the [Exiv2 library](http://www.exiv2.org).
+> Exiv2 is a C++ library and a command-line utility to read, write, delete and modify Exif, IPTC, XMP and ICC image metadata.
 
-**Category:** CAMERAS · **Ecosystem:** python · **Vendored upstream:** https://github.com/dberesford/exiv2node · **Pinned commit:** `e407f94bc4a2514d4ec38e90281db20a9a9f44e8` · **Vendor:** Anticloud FZ LLE
-
-> **Note:** this package vendors `https://github.com/dberesford/exiv2node` as the implementation for the `EXIV2` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
+**Category:** CAMERAS · **Ecosystem:** python · **Vendored upstream:** https://github.com/Exiv2/exiv2 · **Pinned commit:** `38dccf457d8a627139f5387199faae86b50ed8ea` · **Vendor:** Anticloud FZ LLE
 
 ## What This Project Is
 
-Exiv2 is a native c++ extension for [io.js](https://iojs.org/en/index.html) and [node.js](https://nodejs.org/) that provides support for reading and writing image metadata via the [Exiv2 library](http://www.exiv2.org).
+Exiv2 is a C++ library and a command-line utility to read, write, delete and modify Exif, IPTC, XMP and ICC image metadata.
 
 This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
 ## Installation
 
-Once the dependencies are in place, you can build and install the module using
-npm:
+You need [CMake](https://cmake.org/download/) to configure the Exiv2 project, any C++ compiler implementing the C++ 20 standard and the associated tool chain.
 
-    npm install exiv2
-
-You can verify that everything is installed and operating correctly by running
-the tests:
-
-    npm test
+<div id="B_I_U_Unix">
 
 ## Usage
 
@@ -68,7 +60,7 @@ The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The 
 SHA3-256 of `BENCH.json`:
 
 ```
-3b68fc8d53215034ed84a4012ad9d94f283ac01b5d787180c3a629cd171d10dd
+c0e8d2f2d3283694f6607e5cba109bfe72b23733ea3f52f12351d7bc77cf1c5a
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
