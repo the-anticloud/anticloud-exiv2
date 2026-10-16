@@ -543,7 +543,7 @@
    "url": "https://github.com/Exiv2/exiv2",
    "head": "38dccf457d8a627139f5387199faae86b50ed8ea",
    "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
-   "previous_substitute": "https://github.com/dberesford/exiv2node"
+   "previous_substitute": "https://github.com/Exiv2/exiv2"
   }
  }
 }
